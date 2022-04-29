@@ -63,4 +63,5 @@ elif app_mode == 'Predict Churn':
     df = pd.read_csv('emp_data.csv')
     display_df = st.checkbox(label = 'Want to see underlying data?')
     if display_df:
-        st.write(df.head())
+        st.write(df[['satisfaction_level', 'average_montly_hours', 'promotion_last_5year',
+                     'salary', 'left']].head())
