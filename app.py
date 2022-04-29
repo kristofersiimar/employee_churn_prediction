@@ -64,4 +64,4 @@ elif app_mode == 'Predict Churn':
     display_df = st.checkbox(label = 'Want to see underlying data?')
     if display_df:
         st.write(df[['satisfaction_level', 'average_montly_hours', 'promotion_last_5years',
-                     'salary', 'left']].head())
+                     'salary', 'left']].sample(5))
