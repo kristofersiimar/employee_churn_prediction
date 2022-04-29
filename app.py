@@ -12,8 +12,9 @@ if app_mode == 'Home':
     st.image(logo, width = 50)
     st.title('Employee Churn Prediction Tool')
     st.markdown('Hi there 🙋‍!')
-    st.markdown('We are here to help you to support you and our lovely colleagues! Please use the Predict Churn tool (from sidebar) to identify '
-                'people that are happy and those who feel not too happy at the moment 😇!')
+    st.markdown("""We are here to help you to support you and our lovely colleagues! Please use the Predict Churn tool 
+                (from sidebar) to identify 
+                people that are happy and those who feel not too happy at the moment 😇!""")
     home_image = Image.open('home_pic.jpg')
     st.image(home_image, caption = 'Teamwork helps to put Big ideas into small packages!')
 
