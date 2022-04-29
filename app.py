@@ -60,3 +60,7 @@ elif app_mode == 'Predict Churn':
         elif prediction[0] == 1:
             st.error('Employee will churn 😢')
 
+    df = pd.read_csv('emp_data.csv')
+    display_df = st.checkbox(label = 'Want to see underlying data?')
+    if display_df:
+        st.write(df.head())
